@@ -146,13 +146,14 @@ body {
 
 .Pay .Pay-main {
   display: inline-flex;
-  font-size: 20px;
+  align-items: center;
+  font-size: 25px;
   padding: 20px;
 }
 
 .Pay .OurButton{
   width:80px;
-  height:120%;
+  height:70px;
 }
 
 .Pay .fakeaccount{
@@ -162,6 +163,29 @@ body {
   margin-left: 100px;
   margin-right: 100px;
   margin-bottom: 10px;
+}
+
+.Pay .waiting{
+  font-size: 25px;
+  margin-top:50px;
+  margin-bottom: 20px;
+}
+
+.Pay .price{
+  border-width: 2;
+  border-color: green;
+  border-style: solid;
+  padding: 20px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.Pay .num{
+  border-width: 2;
+  border-color: green;
+  border-style: solid;
+  padding:20px;
+  width:20px;
 }
 
 /*Match*/
