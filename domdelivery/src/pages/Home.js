@@ -10,6 +10,11 @@ function Home() {
       <h4>여기는 home</h4>
       <UserInfo />
       <OurButton text={"밥 먹으러 가자!"} onclick={() => navigate("/match")} />
+      <h5>
+      <OurButton text={"goto pay"} onclick={() => navigate("/pay")} />
+      <OurButton text={"goto delivery"} onclick={() => navigate("/delivery")} />
+      <OurButton text={"goto menuselect"} onclick={() => navigate("/menuselect")} />
+      </h5>
     </div>
   );
 }
