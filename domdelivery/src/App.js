@@ -28,11 +28,11 @@ const dummyChicken = [
   
 ];
 
-const dummyPizza=[
+const dummyPizza = [
 
 ];
 
-const dummyHambergur[
+const dummyHambergur = [
 
 ];
 
