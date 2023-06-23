@@ -52,6 +52,7 @@ body {
 }
 
 .Delivery .bike {
+  margin-top: 120px;
   height: 270px;
   width: 50%;
 }
