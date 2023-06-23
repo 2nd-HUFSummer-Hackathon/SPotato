@@ -93,7 +93,7 @@ function App() {
                   />
                 }
               />
-              <Route path="/pay" element={<Pay cost={cost} />} />
+              <Route path="/pay" element={<Pay selectedMenuId={selectedMenuId} cost={cost} menu_name={menu_name} />} />
               <Route path="/delivery" element={<Delivery />} />
             </Routes>
           </div>
