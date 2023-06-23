@@ -2,6 +2,8 @@
   text-align: center;
 }
 
+
+
 /*Delivery*/
 .Delivery{
   width:100%;
@@ -35,6 +37,18 @@
 
 .Home .select{
   display:flex;
+}
+
+.select > * {
+  flex: 1;
+}
+
+.select > *:first-child {
+  flex-basis: 30%;
+}
+
+.select > *:last-child {
+  flex-basis: 70%;
 }
 
 .Home .ControlMenu{

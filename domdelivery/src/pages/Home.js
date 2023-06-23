@@ -53,24 +53,21 @@ function Home() {
 
   return (
     <div className="Home">
-      <h3>오류 안뜬당 히히</h3>
-      <h4>여기는 home</h4>
+      <h3>무엇을 함께 배달할까?</h3>
       <UserInfo />
       <div className="select">
         <ControlMenu
-          className="maintype"
           value={foodType}
           onChange={setFoodType}
           optionList={foodOptionList}
         />
         <ControlMenu
-          className="subtype"
           value={subType}
           onChange={setSubtype}
           optionList={
-            foodType == "pizza"
+            foodType === "pizza"
               ? pizzaList
-              : foodType == "hamburger"
+              : foodType === "hamburger"
               ? hamburgerList
               : chickenList
           }
