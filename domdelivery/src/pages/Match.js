@@ -61,7 +61,7 @@ function Match(props) {
 
       <div className="Match-main">
         <div className="num">1</div>
-        <div className="menu">뿌링클 </div>
+        <div className="menu">뿌링클</div>
         <div style={{ padding: "20px", marginLeft: "10px", width: "20px" }}>
           <OurButton type="positive" text={"O"} />
         </div>

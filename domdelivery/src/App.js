@@ -47,7 +47,7 @@ export const UserDispatchContext = React.createContext();
 function App() {
   const [user, dispatch] = useReducer(reducer, dummyUser);
   const [selectedMenuId, setSelectedMenuId] = useState(null);
-  const [cost, setCost] = useState();
+  const [cost, setCost] = useState(0);
   const dataId = useRef(1);
 
   console.log(user);

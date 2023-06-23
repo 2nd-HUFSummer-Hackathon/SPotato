@@ -20,49 +20,49 @@ function MenuSelect(props) {
   } else if (MenuId == 2) {
     return (
       <div>
-        <Menupage_pizza2 />
+        <Menupage_pizza2 setCost={props.setCost} />
       </div>
     );
   } else if (MenuId == 3) {
     return (
       <div>
-        <Menupage_pizza3 />
+        <Menupage_pizza3 setCost={props.setCost} />
       </div>
     );
   } else if (MenuId == 4 || MenuId == 5) {
     return (
       <div>
-        <Menupage_chicken1 />
+        <Menupage_chicken1 setCost={props.setCost} />
       </div>
     );
   } else if (MenuId == 6) {
     return (
       <div>
-        <Menupage_chicken2 />
+        <Menupage_chicken2 setCost={props.setCost} />
       </div>
     );
   } else if (MenuId == 7) {
     return (
       <div>
-        <Menupage_chicken3 />
+        <Menupage_chicken3 setCost={props.setCost} />
       </div>
     );
   } else if (MenuId == 8 || MenuId == 9) {
     return (
       <div>
-        <Menupage_ham1 />
+        <Menupage_ham1 setCost={props.setCost} />
       </div>
     );
   } else if (MenuId == 10) {
     return (
       <div>
-        <Menupage_ham2 />
+        <Menupage_ham2 setCost={props.setCost} />
       </div>
     );
   } else if (MenuId == 11) {
     return (
       <div>
-        <Menupage_ham3 />
+        <Menupage_ham3 setCost={props.setCost} />
       </div>
     );
   }
