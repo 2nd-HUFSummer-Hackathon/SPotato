@@ -8,6 +8,7 @@ function Menupage_chicken3() {
   return (
     <div className="MenuSelect">
       <h3>여기는 ~BHC~입니다</h3>
+      <hr></hr>
       <img
         onClick={handleClick}
         src={process.env.PUBLIC_URL + `assets/chicken3-1.jpg`}

@@ -8,6 +8,7 @@ function Menupage_ham1() {
   return (
     <div className="MenuSelect">
       <h3>여기는 ~롯데리아~입니다</h3>
+      <hr></hr>
       <img
         onClick={handleClick}
         src={process.env.PUBLIC_URL + `assets/ham2-1.jpg`}
