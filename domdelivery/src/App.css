@@ -28,6 +28,23 @@
   margin-bottom: 20px;
 }
 
+/*Home*/
+.Home{
+  align-items: center;
+}
+
+.Home .select{
+  display:flex;
+}
+
+.Home .maintype{
+  width: 30%;
+}
+
+.Home .subtype{
+  width:70%;
+}
+
 /*Pay*/
 .Pay{
   width:100%;
@@ -35,13 +52,15 @@
 }
 
 .Pay .Pay-header{
-  background: #0bd;
   font-size: 20px;
-  padding: 20px;
-  margin: 10px;
+  margin-top: 150px;
+  margin-bottom: 20px;
 }
 
 .Pay .Pay-main{
+  display: flex;
+  justify-content: left;
   font-size: 20px;
   padding: 20px;
+  margin-left: 200px;
 }
