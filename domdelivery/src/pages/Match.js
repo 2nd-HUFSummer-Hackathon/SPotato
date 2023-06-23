@@ -3,27 +3,35 @@ import OurButton from "../component/OurButton";
 
 function Match(props) {
   const number = props.selectedMenuId;
+  let min_money = 0;
   let RoomName = "미선택";
   if (number == 0 || number == 1) {
     RoomName = "피자보이";
+    min_money = 34000;
   } else if (number == 2) {
     RoomName = "반올림피자";
+    min_money = 32000;
   } else if (number == 3) {
     RoomName = "베이식스";
+    min_money = 37000;
   } else if (number == 4 || number == 5) {
     RoomName = "미파닭";
+    min_money = 20000;
   } else if (number == 6) {
     RoomName = "교촌치킨";
+    min_money = 27000;
   } else if (number == 7) {
     RoomName = "BHC";
+    min_money = 25000;
   } else if (number == 8 || number == 9) {
     RoomName = "롯데리아";
+    min_money = 13000;
   } else if (number == 10) {
     RoomName = "맘스터치";
+    min_money = 11000;
   } else if (number == 11) {
     RoomName = "666버거";
-  } else if (number == 12) {
-    RoomName = "피자보이";
+    min_money = 12500;
   }
 
   const navigate = useNavigate();
@@ -42,7 +50,7 @@ function Match(props) {
         </div>
 
         <div className="Money-Wrapper">
-          <div className="Money">현재 모인 돈 / 최소 주문 금액</div>
+          <div className="Money">현재 모인 돈 / {min_money}</div>
           <div style={{ marginLeft: "40px", width: "100px" }}>
             <OurButton text={"주문 하기"} onClick={() => navigate("/pay")} />
           </div>
