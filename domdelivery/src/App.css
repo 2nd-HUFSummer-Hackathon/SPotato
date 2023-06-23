@@ -155,12 +155,21 @@ body {
 }
 
 .Match .num{
-  border-width: 2;
+  border-width: 1;
   border-color: green;
   border-style: solid;
   padding: 20px;
   margin-left: -20px;
   width: 20px;
+}
+
+.Match .menu{
+  border-width: 1;
+  border-color: green;
+  border-style: solid;
+  padding: 20px;
+  margin-left: 30px;
+  width:400px;
 }
 
 
