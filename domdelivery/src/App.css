@@ -157,8 +157,8 @@ body {
 }
 .Match .Match-header {
   font-size: 20px;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .Match .Match-header .OurButton{
@@ -192,13 +192,14 @@ body {
   display: flex;
   align-items: flex-start;
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .Match .Money{
   color:white;
   background-color: blue;
   padding: 20px;
-  width: 400px;
+  width: 405px;
 }
 
 .Match .num{

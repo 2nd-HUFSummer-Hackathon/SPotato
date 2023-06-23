@@ -21,6 +21,8 @@ function Match() {
         </div>
       </div>
 
+      <hr></hr>
+
       <div className="Match-main">
         <div className="num">1</div>
         <div className="menu">메뉴</div>
