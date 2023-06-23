@@ -10,24 +10,24 @@ const foodOptionList = [
 ];
 
 const pizzaList = [
-  { value: "notCare", name: "상관없음" },
-  { value: "boy", name: "피자보이" },
-  { value: "banolim", name: "반올림피자" },
-  { value: "bs", name: "베이식스" },
+  { value: "notCare", name: "상관없음", menu_id: 0 },
+  { value: "boy", name: "피자보이", menu_id: 1 },
+  { value: "banolim", name: "반올림피자", menu_id: 2 },
+  { value: "bs", name: "베이식스", menu_id: 3 },
 ];
 
 const chickenList = [
-  { value: "notCare", name: "상관없음" },
-  { value: "crazy", name: "미파닭" },
-  { value: "kyochon", name: "교촌" },
-  { value: "bhc", name: "BHC" },
+  { value: "notCare", name: "상관없음", menu_id: 4 },
+  { value: "crazy", name: "미파닭", menu_id: 5 },
+  { value: "kyochon", name: "교촌", menu_id: 6 },
+  { value: "bhc", name: "BHC", menu_id: 7 },
 ];
 
 const hamburgerList = [
-  { value: "notCare", name: "상관없음" },
-  { value: "lotte", name: "롯데리아" },
-  { value: "moms", name: "맘스터치" },
-  { value: "six", name: "666버거" },
+  { value: "notCare", name: "상관없음", menu_id: 8 },
+  { value: "lotte", name: "롯데리아", menu_id: 9 },
+  { value: "moms", name: "맘스터치", menu_id: 10 },
+  { value: "six", name: "666버거", menu_id: 11 },
 ];
 
 const ControlMenu = ({ value, onChange, optionList }) => {
