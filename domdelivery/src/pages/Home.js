@@ -87,7 +87,7 @@ function Home({ onMenuIdChange }) {
           }
         />
       </div>
-      <OurButton text={"밥 먹으러 가자!"} onClick={() => navigate("/menuselect")} />
+      <OurButton text={"밥 먹으러 가자!"} onClick={() => navigate("/match")} />
     </div>
   );
 }
