@@ -28,6 +28,23 @@
   margin-bottom: 20px;
 }
 
+/*Home*/
+.Home{
+  align-items: center;
+}
+
+.Home .select{
+  display:flex;
+}
+
+.Home .maintype{
+  width: 30%;
+}
+
+.Home .subtype{
+  width:70%;
+}
+
 /*Pay*/
 .Pay{
   width:100%;
@@ -45,3 +62,4 @@
   font-size: 20px;
   padding: 20px;
 }
+
