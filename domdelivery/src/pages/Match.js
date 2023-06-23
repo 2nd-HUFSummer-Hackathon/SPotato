@@ -66,6 +66,30 @@ function Match(props) {
           <OurButton type="positive" text={"O"} />
         </div>
       </div>
+
+      <div className="Match-main">
+        <div className="num">2</div>
+        <div className="menu">메뉴</div>
+        <div style={{ padding: "20px", marginLeft: "10px", width: "20px"}}>
+          <OurButton type="positive" text={"O"} />
+        </div>
+      </div>
+
+      <div className="Match-main">
+        <div className="num">3</div>
+        <div className="menu">메뉴</div>
+        <div style={{ padding: "20px", marginLeft: "10px", width: "20px" }}>
+          <OurButton type="positive" text={"O"} />
+        </div>
+      </div>
+
+      <div className="Match-main">
+        <div className="num">4</div>
+        <div className="menu">메뉴</div>
+        <div style={{ padding: "20px", marginLeft: "10px", width: "20px" }}>
+          <OurButton type="positive" text={"O"} />
+        </div>
+      </div>
     </div>
   );
 }
