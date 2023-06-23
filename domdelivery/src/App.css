@@ -47,18 +47,25 @@ body {
   text-align: center;
 }
 
+.Delivery img{
+  margin-top: 40px;
+}
+
 .Delivery .bike {
-  height: 250px;
+  height: 270px;
   width: 50%;
 }
 
 .Delivery .imgline {
-  height: 300px;
-  width: 1000px;
+  margin-top: 90px;
+  margin-bottom: 60px;
+  height: 100px;
+  width: 100%;
 }
 
 .Delivery .delivery-text {
-  font-size: 25px;
+  font-size: 26px;
+  margin-top: 15px;
   margin-bottom: 20px;
 }
 
