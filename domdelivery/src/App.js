@@ -63,7 +63,7 @@ function App() {
               />
               <Route path="/match" element={<Match />} />
               <Route
-                path="/menuselect/:id"
+                path="/menuselect"
                 element={<MenuSelect selectedMenuId={selectedMenuId} />}
               />
               <Route path="/pay" element={<Pay />} />
