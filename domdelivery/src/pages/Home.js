@@ -66,8 +66,10 @@ function Home({ onMenuIdChange }) {
   return (
     <div className="Home">
       <UserInfo />
-      <h4 className="log">회원명 : {nameValue}  환불계좌:{accountValue} </h4>
-
+      <div>
+        <h4 className="log">회원명 : {nameValue} <br/>  환불계좌:{accountValue} </h4>
+      </div>
+      
       <h3>무엇을 함께 배달할까?</h3>
 
       <div className="select">
