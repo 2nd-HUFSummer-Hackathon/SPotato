@@ -10,7 +10,7 @@ function Match() {
         <div style={{display: "flex", alignItems: "flex-start", marginTop:"20px"}}>
           <div style={{borderWidth: 2, borderColor:'green', borderStyle:"solid", padding:"20px", width:"500px"}}>0000 방</div>
           <div style={{borderWidth: 2, borderColor:'green', borderStyle:"solid", padding:"20px", marginLeft:"50px", width:"100px"}}>
-            <OurButton text={"메뉴 선택"} onclick={() => navigate("/menuselect")} />
+            <OurButton text={"메뉴 선택"} onClick={() => navigate("/menuselect")} />
           </div> 
         </div>
 
