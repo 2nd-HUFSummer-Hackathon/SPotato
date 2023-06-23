@@ -166,12 +166,39 @@ body {
   width: 200px;
 }
 
+.Match .RoomInfo{
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.Match .RoomName{
+  border-width: 2;
+  border-color: green;
+  border-style: solid;
+  padding:20px;
+  width:400px;
+}
+
 .Match .Match-main {
   display: inline-flex;
   align-items: center;
   font-size: 20px;
   padding: 20px;
   width: 98%;
+}
+
+.Match .Money-Wrapper{
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.Match .Money{
+  color:white;
+  background-color: blue;
+  padding: 20px;
+  width:800px;
 }
 
 .Match .num{
