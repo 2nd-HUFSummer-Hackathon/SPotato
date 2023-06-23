@@ -5,11 +5,13 @@ function Menupage_ham3(props) {
     alert("첫번째 이미지가 선택되었습니다.");
     navigate(-1);
     props.setCost(9500);
+    props.setName("더머쉬룸");
   }
   function handleClickTwo() {
     alert("두번째 이미지가 선택되었습니다.");
     navigate(-1);
     props.setCost(9300);
+    props.setName("텍사스레드");
   }
   return (
     <div className="MenuSelect">

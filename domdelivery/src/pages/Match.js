@@ -7,7 +7,8 @@ function Match(props) {
   let RoomName = "미선택";
   let choice1, choice2, choice3;
   let monney = 0;
-  let userchoice = "메뉴를 선택하세요."
+  const userchoice = props.menu_name;
+  console.log(userchoice);
   if (number == 0 || number == 1) {
     RoomName = "피자보이";
     min_money = 34000;

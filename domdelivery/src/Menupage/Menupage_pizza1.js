@@ -5,13 +5,14 @@ function Menupage_pizza1(props) {
     alert("첫번째 이미지가 선택되었습니다.");
     navigate(-1);
     props.setCost(14500);
+    props.setName("포테이토피자+콜라");
   }
   function handleClickTwo() {
     alert("두번째 이미지가 선택되었습니다.");
     navigate(-1);
     props.setCost(14500);
+    props.setName("치즈피자+콜라");
   }
-  console.log(props);
   return (
     <div className="MenuSelect">
       <h3>여기는 ~피자보이~입니다</h3>

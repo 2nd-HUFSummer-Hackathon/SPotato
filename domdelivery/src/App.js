@@ -48,8 +48,8 @@ function App() {
   const [user, dispatch] = useReducer(reducer, dummyUser);
   const [selectedMenuId, setSelectedMenuId] = useState(null);
   const [cost, setCost] = useState(0);
+  const [menu_name, setName] = useState("");
   const dataId = useRef(1);
-
   const onCreate = (account, name) => {
     dispatch({
       type: "CREATE",
@@ -81,7 +81,7 @@ function App() {
               />
               <Route
                 path="/match"
-                element={<Match selectedMenuId={selectedMenuId} cost={cost} />}
+                element={<Match selectedMenuId={selectedMenuId} cost={cost} menu_name={menu_name}/>}
               />
               <Route
                 path="/menuselect"
@@ -89,6 +89,7 @@ function App() {
                   <MenuSelect
                     selectedMenuId={selectedMenuId}
                     setCost={setCost}
+                    setName={setName}
                   />
                 }
               />

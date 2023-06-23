@@ -5,11 +5,13 @@ function Menupage_chicken3(props) {
     alert("첫번째 이미지가 선택되었습니다.");
     navigate(-1);
     props.setCost(22000);
+    props.setName("더블팝순살 후라이드");
   }
   function handleClickTwo() {
     alert("두번째 이미지가 선택되었습니다.");
     navigate(-1);
     props.setCost(20000);
+    props.setName("뿌링클 콤보");
   }
   return (
     <div className="MenuSelect">

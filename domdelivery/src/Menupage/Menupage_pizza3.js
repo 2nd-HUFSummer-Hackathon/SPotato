@@ -5,11 +5,13 @@ function Menupage_pizza3(props) {
     alert("첫번째 이미지가 선택되었습니다.");
     navigate(-1);
     props.setCost(21900);
+    props.setName("어니언메가포테이토");
   }
   function handleClickTwo() {
     alert("두번째 이미지가 선택되었습니다.");
     navigate(-1);
     props.setCost(18900);
+    props.setName("대구연탄불고기");
   }
   return (
     <div className="MenuSelect">

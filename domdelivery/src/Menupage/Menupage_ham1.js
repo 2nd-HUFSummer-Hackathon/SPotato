@@ -5,11 +5,13 @@ function Menupage_ham1(props) {
     alert("첫번째 이미지가 선택되었습니다.");
     navigate(-1);
     props.setCost(6900);
+    props.setName("마라로드 비프세트");
   }
   function handleClickTwo() {
     alert("두번째 이미지가 선택되었습니다.");
     navigate(-1);
     props.setCost(7100);
+    props.setName("더블 치킨버거 세트");
   }
   return (
     <div className="MenuSelect">

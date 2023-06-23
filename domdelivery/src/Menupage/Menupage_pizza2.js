@@ -5,11 +5,13 @@ function Menupage_pizza2(props) {
     alert("첫번째 이미지가 선택되었습니다.");
     navigate(-1);
     props.setCost(21900);
+    props.setName("나이스투 미트 유 피자");
   }
   function handleClickTwo() {
     alert("두번째 이미지가 선택되었습니다.");
     navigate(-1);
     props.setCost(21900);
+    props.setName("까르보치킨 치즈링");
   }
   return (
     <div className="MenuSelect">

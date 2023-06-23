@@ -9,60 +9,61 @@ import Menupage_ham2 from "../Menupage/Menupage_ham2";
 import Menupage_ham3 from "../Menupage/Menupage_ham3";
 function MenuSelect(props) {
   console.log(props);
+  
   const MenuId = props.selectedMenuId;
   console.log(MenuId);
   if (MenuId == 0 || MenuId == 1) {
     return (
       <div>
-        <Menupage_pizza1 setCost={props.setCost} />
+        <Menupage_pizza1 setCost={props.setCost} setName={props.setName} />
       </div>
     );
   } else if (MenuId == 2) {
     return (
       <div>
-        <Menupage_pizza2 setCost={props.setCost} />
+        <Menupage_pizza2 setCost={props.setCost} setName={props.setName}/>
       </div>
     );
   } else if (MenuId == 3) {
     return (
       <div>
-        <Menupage_pizza3 setCost={props.setCost} />
+        <Menupage_pizza3 setCost={props.setCost} setName={props.setName}/>
       </div>
     );
   } else if (MenuId == 4 || MenuId == 5) {
     return (
       <div>
-        <Menupage_chicken1 setCost={props.setCost} />
+        <Menupage_chicken1 setCost={props.setCost} setName={props.setName}/>
       </div>
     );
   } else if (MenuId == 6) {
     return (
       <div>
-        <Menupage_chicken2 setCost={props.setCost} />
+        <Menupage_chicken2 setCost={props.setCost} setName={props.setName}/>
       </div>
     );
   } else if (MenuId == 7) {
     return (
       <div>
-        <Menupage_chicken3 setCost={props.setCost} />
+        <Menupage_chicken3 setCost={props.setCost} setName={props.setName}/>
       </div>
     );
   } else if (MenuId == 8 || MenuId == 9) {
     return (
       <div>
-        <Menupage_ham1 setCost={props.setCost} />
+        <Menupage_ham1 setCost={props.setCost} setName={props.setName}/>
       </div>
     );
   } else if (MenuId == 10) {
     return (
       <div>
-        <Menupage_ham2 setCost={props.setCost} />
+        <Menupage_ham2 setCost={props.setCost} setName={props.setName}/>
       </div>
     );
   } else if (MenuId == 11) {
     return (
       <div>
-        <Menupage_ham3 setCost={props.setCost} />
+        <Menupage_ham3 setCost={props.setCost} setName={props.setName}/>
       </div>
     );
   }
