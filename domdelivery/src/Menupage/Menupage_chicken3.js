@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-
 function Menupage_chicken3() {
   const navigate = useNavigate();
   function handleClick() {
