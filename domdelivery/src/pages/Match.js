@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import OurButton from "../component/OurButton";
 
 
+
+
 function Match() {
   const navigate = useNavigate();
   return (
@@ -25,11 +27,11 @@ function Match() {
       <div className="Match-main">
         <div style={{borderWidth: 2, borderColor:'green', borderStyle:"solid", padding:"20px", marginLeft: "-20px", width:"20px"}}>1</div>
         <div style={{borderWidth: 2, borderColor:'green', borderStyle:"solid", padding:"20px",  marginLeft:"30px", width:"400px"}}>메뉴</div>
-        <div style={{borderWidth: 2, borderColor:'green', borderStyle:"solid", padding:"20px", marginLeft: "24px", width:"20px"}}>
-          <OurButton text={"O"}/>
+        <div style={{padding:"20px", marginLeft: "10px", width:"20px"}}>
+          <OurButton type='positive' text={"O"} />
         </div>
-        <div style={{borderWidth: 2, borderColor:'green', borderStyle:"solid", padding:"20px", marginLeft: "10px", width:"20px"}}>
-          <OurButton text={"X"}/>
+        <div style={{ padding:"20px", marginLeft: "10px",marginRight:"10px", width:"20px"}}>
+          <OurButton type='negative' text={"X"}/>
         </div>
       </div> 
 
