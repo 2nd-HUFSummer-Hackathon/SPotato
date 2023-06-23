@@ -1,13 +1,12 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
-import { useReducer, useRef } from "react";
+import React, { useReducer, useRef } from "react";
 
 import Home from "./pages/Home";
 import Match from "./pages/Match";
 import MenuSelect from "./pages/MenuSelect";
 import Pay from "./pages/Pay";
 import Delivery from "./pages/Delivery";
-import { useReducer, useRef } from "react";
 
 const reducer = (state, action) => {
   let newState = [...state];
