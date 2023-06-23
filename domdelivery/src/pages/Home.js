@@ -57,13 +57,14 @@ function Home() {
       <h4>여기는 home</h4>
       <UserInfo />
       <div className="select">
-        <ControlMenu className="maintype"
+        <ControlMenu
+          className="maintype"
           value={foodType}
           onChange={setFoodType}
           optionList={foodOptionList}
         />
-<<<<<<< HEAD
         <ControlMenu
+          className="subtype"
           value={subType}
           onChange={setSubtype}
           optionList={
@@ -73,12 +74,6 @@ function Home() {
               ? hamburgerList
               : chickenList
           }
-=======
-        <ControlMenu className="subtype"
-          value = {subType}
-          onChange = {setSubtype}
-          optionList={foodType=="pizza"? pizzaList : (foodType=="hamburger"? hamburgerList : chickenList)}
->>>>>>> c0a8c94417f57771f99b0f384b2d78892daf10a0
         />
       </div>
       <OurButton text={"밥 먹으러 가자!"} onclick={() => navigate("/match")} />
