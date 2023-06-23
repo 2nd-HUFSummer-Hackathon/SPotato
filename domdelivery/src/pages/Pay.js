@@ -4,7 +4,7 @@ function Pay() {
   return (
     <div className="Pay">
       <div className="Pay-header">
-        <div style={{color:"white", backgroundColor:"blue", padding:"20px",marginLeft:"100px",marginRight:"100px",marginBottom:"10px"}}>가상계좌: ~~~</div>
+        <div style={{color:"white", backgroundColor:"blue", padding:"20px",marginLeft:"100px",marginRight:"100px",marginBottom:"10px"}}>가상계좌: 우리 1002=061-238724</div>
         <div style={{borderWidth: 2, borderColor:'green', borderStyle:"solid", padding:"20px", marginLeft:"120px",marginRight:"120px"}}>N 원</div>
       </div>
 
