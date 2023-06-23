@@ -27,3 +27,19 @@
   font-size: 20px;
   margin-bottom: 20px;
 }
+
+/*Pay*/
+.Pay{
+  width:100%;
+  margin-bottom: 100px;
+}
+
+.Pay .Pay-header{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.Pay .Pay-main{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
