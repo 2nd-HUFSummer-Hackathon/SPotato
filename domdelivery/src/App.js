@@ -50,8 +50,6 @@ function App() {
   const [cost, setCost] = useState(0);
   const dataId = useRef(1);
 
-  console.log(user);
-  console.log(cost);
   const onCreate = (account, name) => {
     dispatch({
       type: "CREATE",

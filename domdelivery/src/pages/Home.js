@@ -61,7 +61,6 @@ function Home({ onMenuIdChange }) {
       onMenuIdChange(selectedMenu.menu_id);
     }
   }, [selectedMenu, onMenuIdChange]);
-
   return (
     <div className="Home">
       <UserInfo />
