@@ -23,7 +23,7 @@ function Match() {
       </div>
 
       <div className="Match-main">
-        <div style={{borderWidth: 2, borderColor:'green', borderStyle:"solid", padding:"20px", marginLeft: "-20px", width:"20px"}}>1</div>
+        <div className="num">1</div>
         <div style={{borderWidth: 2, borderColor:'green', borderStyle:"solid", padding:"20px",  marginLeft:"30px", width:"400px"}}>메뉴</div>
         <div style={{padding:"20px", marginLeft: "10px", width:"20px"}}>
           <OurButton type='positive' text={"O"} />

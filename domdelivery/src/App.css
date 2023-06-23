@@ -154,6 +154,16 @@ body {
   width: 98%;
 }
 
+.Match .num{
+  border-width: 2;
+  border-color: green;
+  border-style: solid;
+  padding: 20px;
+  margin-left: -20px;
+  width: 20px;
+}
+
+
 .OurButton {
   cursor: pointer;
   border: none;
