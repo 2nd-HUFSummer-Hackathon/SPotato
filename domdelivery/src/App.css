@@ -164,15 +164,11 @@ body {
   color: black;
 }
 
-.OurButton_positive {
+.OurButton_clicked {
   background-color: #64c964;
   color: white;
 }
 
-.OurButton_negative {
-  background-color: #fd565f;
-  color: white;
-}
 
 /*MenuSelect*/
 
