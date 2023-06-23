@@ -24,11 +24,17 @@ const reducer = (state, action) => {
   return newState;
 };
 
-const dummyChicken = [{ id: 15, max: 3, order: [1, 0], current: 10500, least:20000 }];
+const dummyChicken = [
+  { id: 15, max: 3, order: [1, 0], current: 10500, least: 20000 },
+];
 
-const dummyPizza = [{ id: 13, max: 4, order: [0, 0, 0, 0], current: 8760, least:30000 }];
+const dummyPizza = [
+  { id: 13, max: 4, order: [0, 0, 0, 0], current: 8760, least: 30000 },
+];
 
-const dummyHamburger = [{ id: 110, max: 2, order: [1, 0, 0], current: 29000, least:40000 }];
+const dummyHamburger = [
+  { id: 110, max: 2, order: [1, 0, 0], current: 29000, least: 40000 },
+];
 
 const dummyUser = [
   { id: 1, account: 123456789, name: "K" },
@@ -74,7 +80,10 @@ function App() {
                   />
                 }
               />
-              <Route path="/match" element={<Match />} />
+              <Route
+                path="/match"
+                element={<Match selectedMenuId={selectedMenuId} />}
+              />
               <Route
                 path="/menuselect"
                 element={<MenuSelect selectedMenuId={selectedMenuId} />}
