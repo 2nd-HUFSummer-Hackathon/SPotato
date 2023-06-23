@@ -15,6 +15,9 @@ function Match() {
 
         <div className="Money-Wrapper">
           <div className="Money">현재 모인 돈 / 최소 주문 금액</div>
+          <div style={{  marginLeft:"40px", width:"100px"}}>
+            <OurButton text={"주문 하기"} onClick={() => navigate("/pay")} />
+          </div> 
         </div>
       </div>
 
