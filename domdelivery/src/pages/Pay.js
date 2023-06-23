@@ -2,7 +2,7 @@ function Pay() {
   return (
     <div className="Pay">
       <div className="Pay-header">
-        <div style={{color:"white", backgroundColor:"blue", padding:"20px", marginLeft:"200px",marginRight:"200px",marginBottom:"10px"}}>가상계좌: ~~~</div>
+        <div style={{color:"white", backgroundColor:"blue", padding:"20px",marginLeft:"200px",marginRight:"200px",marginBottom:"10px"}}>가상계좌: ~~~</div>
         <div style={{borderWidth: 2, borderColor:'green', borderStyle:"solid", padding:"20px", marginLeft:"220px",marginRight:"220px"}}>N 원</div>
       </div>
 
