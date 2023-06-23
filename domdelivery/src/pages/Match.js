@@ -6,16 +6,15 @@ function Match() {
   return (
     <div className="Match">
       <div className="Match-header">
-        <div style={{display: "flex", alignItems: "flex-start", marginTop:"20px"}}>
-          <div style={{borderWidth: 2, borderColor:'green', borderStyle:"solid", padding:"20px", width:"400px"}}>0000 방</div>
-          <div style={{   marginLeft:"40px", width:"100px"}}>
+        <div className="RoomInfo">
+          <div className="RoomName">0000 방</div>
+          <div style={{  marginLeft:"40px", width:"100px"}}>
             <OurButton text={"메뉴 선택"} onClick={() => navigate("/menuselect")} />
           </div> 
         </div>
 
-        <div style={{display: "flex", alignItems: "flex-start", marginTop:"20px"}}>
-          <div style={{color:"white", backgroundColor:"blue", padding:"20px",width:"800px"}}>현재 모인 돈 / 최소 주문 금액</div>
-          
+        <div className="Money-Wrapper">
+          <div className="Money">현재 모인 돈 / 최소 주문 금액</div>
         </div>
       </div>
 
