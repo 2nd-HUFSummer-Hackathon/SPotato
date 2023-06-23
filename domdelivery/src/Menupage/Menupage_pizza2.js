@@ -1,4 +1,4 @@
-function Pizza2() {
+function Menupage_pizza2() {
   return (
     <div className="MenuSelect">
       <h3>여기는 ~반올림피자~입니다</h3>
@@ -8,4 +8,4 @@ function Pizza2() {
   );
 }
 
-export default Pizza2;
+export default Menupage_pizza2;
