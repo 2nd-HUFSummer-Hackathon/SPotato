@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 
-function Delivery() {
+const Delivery=()=> {
 
   const ImageChanger = () => {
     const [currentImage, setCurrentImage] = useState(process.env.PUBLIC_URL+`assets/line1.png`);
@@ -17,17 +17,17 @@ function Delivery() {
   
     return (
       <div>
-        <img src={currentImage} alt="Current Image" />
+        <img  className="imgline" src={currentImage} alt="Current Image" />
       </div>
     );
   };
 
   return (
-    <div>
-      <img src={process.env.PUBLIC_URL+`assets/bike.png`}/>
-      <div><ImageChanger /></div>
-      <div>
-        주문하신 음식이 n분 후에 도착 예정입니다.<br/> 
+    <div className="Delivery">
+      <img className="bike" src={process.env.PUBLIC_URL+`assets/bike.png`}/>
+      <div ><ImageChanger/></div>
+      <div className="delivery-text">
+        주문하신 음식이 n분 후에 도착 예정입니다.
         교내 배달존으로 모여주세요.
       </div>
     </div>
