@@ -53,8 +53,10 @@ function Home() {
 
   return (
     <div className="Home">
-      <h3>무엇을 함께 배달할까?</h3>
       <UserInfo />
+      
+      <h3>무엇을 함께 배달할까?</h3>
+      
       <div className="select">
         <ControlMenu
           value={foodType}

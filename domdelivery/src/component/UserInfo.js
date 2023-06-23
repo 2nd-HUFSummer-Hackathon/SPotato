@@ -9,7 +9,7 @@ function UserInfo() {
 
   return (
     <div className="UserInfo">
-      <h3 >게스트 회원 정보를 입력해줘</h3>
+      <h3 className="guest">게스트 회원 정보를 입력해줘</h3>
       <input placeholder='닉네임' onChange={onChange} value={text} />
       <input placeholder='환불계좌' onChange={onChange} value={text} />
     </div>
