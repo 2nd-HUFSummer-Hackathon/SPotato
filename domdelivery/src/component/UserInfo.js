@@ -1,22 +1,31 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { UserDispatchContext } from "./../App";
+import OurButton from "./OurButton";
 
 function UserInfo() {
-  const [text, setText] = useState("");
-  const [code,setCode] = useState("");
+  const [account, setAccount] = useState("");
+  const [name, setName] = useState("");
 
-  const onChange = (e) => {
-    setText(e.target.value);
+  const { onCreate } = useContext(UserDispatchContext);
+  const changeAccount = (e) => {
+    setAccount(e.target.value);
   };
 
-  const onChangeCode = (e)=>{
-    setCode(e.target.value);
+  const changeName = (e) => {
+    setName(e.target.value);
+  };
+  const addUser = () => {
+    onCreate(account, name);
+    setAccount("");
+    setName("");
   };
 
   return (
     <div className="UserInfo">
       <h3 className="guest">게스트 회원 정보를 입력해줘</h3>
-      <input placeholder='닉네임' onChange={onChange} value={text} />
-      <input placeholder='환불계좌' onChange={onChangeCode} value={code} />
+      <input placeholder="닉네임" onChange={changeName} value={name} />
+      <input placeholder="환불계좌" onChange={changeAccount} value={account} />
+      <OurButton text={"추가하기"} onClick={addUser} />
     </div>
   );
 }

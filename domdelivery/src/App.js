@@ -37,6 +37,9 @@ function App() {
   const [user, dispatch] = useReducer(reducer, dummyUser);
   const [selectedMenuId, setSelectedMenuId] = useState(null);
   const dataId = useRef(1);
+
+  console.log(user);
+
   const onCreate = (account, name) => {
     dispatch({
       type: "CREATE",
