@@ -52,6 +52,7 @@ body {
 }
 
 .Delivery .bike {
+  margin-top: 120px;
   height: 270px;
   width: 50%;
 }
@@ -101,12 +102,26 @@ body {
   font-size: 25px;
 }
 
+/*Home - UserInfo*/
 .UserInfo .guest {
   font-size: 25px;
 }
 
-.UserInfo {
+.UserInfo input{
   margin-bottom: 100px;
+  height : 30px;
+}
+
+.UserInfo .username{
+  width:20%;
+} 
+
+.UserInfo .useraccount{
+  width:50%;
+}
+
+.UserInfo .OurButton{
+  margin-left: 10px;
 }
 
 /*Pay*/
@@ -146,6 +161,11 @@ body {
   margin-bottom: 20px;
 }
 
+.Match .Match-header .OurButton{
+  height: 65px;
+  width: 200px;
+}
+
 .Match .Match-main {
   display: inline-flex;
   align-items: center;
@@ -155,12 +175,21 @@ body {
 }
 
 .Match .num{
-  border-width: 2;
+  border-width: 1;
   border-color: green;
   border-style: solid;
   padding: 20px;
   margin-left: -20px;
   width: 20px;
+}
+
+.Match .menu{
+  border-width: 1;
+  border-color: green;
+  border-style: solid;
+  padding: 20px;
+  margin-left: 30px;
+  width:400px;
 }
 
 

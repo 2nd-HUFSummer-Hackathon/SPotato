@@ -6,7 +6,8 @@ const OurButton = ({ text, type, onClick }) => {
   const handleClick = () => {
     setIsClicked(!isClicked);
     if (onClick) {
-      onClick(); // onClick prop이 존재할 경우 해당 함수를 호출합니다.
+      onClick();
+      setIsClicked(isClicked) // onClick prop이 존재할 경우 해당 함수를 호출합니다.
     }
   };
 
