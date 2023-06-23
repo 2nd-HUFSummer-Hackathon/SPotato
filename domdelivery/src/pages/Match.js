@@ -7,22 +7,22 @@ function Match(props) {
   let RoomName = "미선택";
   if (number == 0 || number == 1) {
     RoomName = "피자보이";
-    min_money = 34000;
+    min_money = 17000;
   } else if (number == 2) {
     RoomName = "반올림피자";
-    min_money = 32000;
+    min_money = 16000;
   } else if (number == 3) {
     RoomName = "베이식스";
-    min_money = 37000;
+    min_money = 15000;
   } else if (number == 4 || number == 5) {
     RoomName = "미파닭";
-    min_money = 20000;
+    min_money = 12000;
   } else if (number == 6) {
     RoomName = "교촌치킨";
-    min_money = 27000;
+    min_money = 15000;
   } else if (number == 7) {
     RoomName = "BHC";
-    min_money = 25000;
+    min_money = 12000;
   } else if (number == 8 || number == 9) {
     RoomName = "롯데리아";
     min_money = 13000;
