@@ -1,10 +1,17 @@
 import { useNavigate } from "react-router-dom";
-function Menupage_pizza1() {
+function Menupage_pizza1(props) {
   const navigate = useNavigate();
-  function handleClick() {
-    alert("이미지가 선택되었습니다.");
+  function handleClickOne() {
+    alert("첫번째 이미지가 선택되었습니다.");
     navigate(-1);
+    props.setCost(14500);
   }
+  function handleClick() {
+    alert("두번째 이미지가 선택되었습니다.");
+    navigate(-1);
+    props.setCost(14500);
+  }
+  console.log(props);
   return (
     <div className="MenuSelect">
       <h3>여기는 ~피자보이~입니다</h3>

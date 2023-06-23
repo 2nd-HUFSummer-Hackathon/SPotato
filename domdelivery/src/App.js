@@ -47,10 +47,11 @@ export const UserDispatchContext = React.createContext();
 function App() {
   const [user, dispatch] = useReducer(reducer, dummyUser);
   const [selectedMenuId, setSelectedMenuId] = useState(null);
+  const [cost, setCost] = useState();
   const dataId = useRef(1);
 
   console.log(user);
-
+  console.log(cost);
   const onCreate = (account, name) => {
     dispatch({
       type: "CREATE",
@@ -82,11 +83,16 @@ function App() {
               />
               <Route
                 path="/match"
-                element={<Match selectedMenuId={selectedMenuId} />}
+                element={<Match selectedMenuId={selectedMenuId} cost={cost} />}
               />
               <Route
                 path="/menuselect"
-                element={<MenuSelect selectedMenuId={selectedMenuId} />}
+                element={
+                  <MenuSelect
+                    selectedMenuId={selectedMenuId}
+                    setCost={setCost}
+                  />
+                }
               />
               <Route path="/pay" element={<Pay />} />
               <Route path="/delivery" element={<Delivery />} />
