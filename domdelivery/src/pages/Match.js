@@ -50,7 +50,9 @@ function Match(props) {
         </div>
 
         <div className="Money-Wrapper">
-          <div className="Money">현재 모인 돈 / {min_money}</div>
+          <div className="Money">
+            {props.cost} / {min_money}
+          </div>
           <div style={{ marginLeft: "40px", width: "100px" }}>
             <OurButton text={"주문 하기"} onClick={() => navigate("/pay")} />
           </div>
