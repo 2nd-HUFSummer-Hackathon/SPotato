@@ -17,7 +17,7 @@ function Pay() {
         </div>
       </div>
 
-      <div>다른 학우들이 당신의 결제를 기다립니다...(2/3)</div>
+      <div>다른 학우들이 당신의 결제를 기다립니다...(3/4)</div>
 
       <div className="Pay-main">
         <div style={{borderWidth: 2, borderColor:'green', borderStyle:"solid", padding:"20px", width:"20px"}}>1</div>
