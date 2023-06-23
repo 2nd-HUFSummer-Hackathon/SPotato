@@ -8,12 +8,13 @@ import Menupage_ham1 from "../Menupage/Menupage_ham1";
 import Menupage_ham2 from "../Menupage/Menupage_ham2";
 import Menupage_ham3 from "../Menupage/Menupage_ham3";
 function MenuSelect(props) {
-  console.log(props.selectedMenuId);
+  console.log(props);
   const MenuId = props.selectedMenuId;
+
   if (MenuId == 0 || MenuId == 1) {
     return (
       <div>
-        <Menupage_pizza1 />
+        <Menupage_pizza1 setCost={props.setCost} />
       </div>
     );
   } else if (MenuId == 2) {
