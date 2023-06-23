@@ -59,7 +59,12 @@ function App() {
             <Routes>
               <Route
                 path="/"
-                element={<Home onMenuIdChange={handleMenuIdChange} />}
+                element={
+                  <Home
+                    onMenuIdChange={handleMenuIdChange}
+                    selectedMenuId={selectedMenuId}
+                  />
+                }
               />
               <Route path="/match" element={<Match />} />
               <Route
