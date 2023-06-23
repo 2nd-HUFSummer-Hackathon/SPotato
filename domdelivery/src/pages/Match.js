@@ -69,7 +69,7 @@ function Match(props) {
         </div>
       </div>
 
-      <div className="Match-main" style={{ marginBottom: "10px"}}>
+      <div className="Match-main" style={{ marginBottom: "10px" }}>
         <div className="num">2</div>
         <div className="menu">메뉴</div>
         <div
