@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import { useState, useMemo, useEffect } from "react";
 import OurButton from "../component/OurButton";
 import UserInfo from "../component/UserInfo";
+import MenuSelect from "./MenuSelect";
+import Match from "./Match";
 
 const foodOptionList = [
   { value: "pizza", name: "피자" },
@@ -46,6 +48,7 @@ const ControlMenu = ({ value, onChange, optionList }) => {
   );
 };
 
+
 function Home({ onMenuIdChange }) {
   const navigate = useNavigate();
   const [foodType, setFoodType] = useState("pizza");
@@ -59,6 +62,7 @@ function Home({ onMenuIdChange }) {
       onMenuIdChange(selectedMenu.menu_id);
     }
   }, [selectedMenu, onMenuIdChange]);
+
   return (
     <div className="Home">
       <UserInfo />
@@ -83,18 +87,7 @@ function Home({ onMenuIdChange }) {
           }
         />
       </div>
-      <OurButton text={"밥 먹으러 가자!"} onClick={() => navigate("/match")} />
-      <h5>
-        <OurButton text={"goto pay"} onClick={() => navigate("/pay")} />
-        <OurButton
-          text={"goto delivery"}
-          onClick={() => navigate("/delivery")}
-        />
-        <OurButton
-          text={"goto menuselect"}
-          onClick={() => navigate("/menuselect")}
-        />
-      </h5>
+      <OurButton text={"밥 먹으러 가자!"} onClick={() => navigate("/menuselect")} />
     </div>
   );
 }
