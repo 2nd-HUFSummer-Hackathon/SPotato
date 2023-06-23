@@ -6,18 +6,25 @@ function Match() {
   const navigate = useNavigate();
   return (
     <div className="Match">
-      <div style={{display: "flex", alignItems: "flex-start"}}>
-       <div style={{marginTop: 20, width: 450}}>
-         <h2>___ 방</h2>
-       </div>
-       <div style={{marginLeft: 20, marginTop: 50}}>
-        <OurButton text={"메뉴 선택"} onclick={() => navigate("/menuselect")} />
-       </div> 
+      <div className="Match-header">
+        <div style={{display: "flex", alignItems: "flex-start", marginTop:"20px"}}>
+          <div style={{borderWidth: 2, borderColor:'green', borderStyle:"solid", padding:"20px", width:"500px"}}>0000 방</div>
+          <div style={{borderWidth: 2, borderColor:'green', borderStyle:"solid", padding:"20px", marginLeft:"50px", width:"100px"}}>
+            <OurButton text={"메뉴 선택"} onclick={() => navigate("/menuselect")} />
+          </div> 
+        </div>
+
+        <div style={{display: "flex", alignItems: "flex-start", marginTop:"20px"}}>
+          <div style={{color:"white", backgroundColor:"blue", padding:"20px",width:"500px"}}>현재 모인 돈 / 최소 주문 금액</div>
+          <div style={{borderWidth: 2, borderColor:'green', borderStyle:"solid", padding:"20px", marginLeft:"50px", width:"100px"}}>aa</div>
+        </div>
       </div>
-      
-      <div style={{marginLeft: 20, marginTop: 20}}>
-        <h3 style={{fontSize: 20}}>현재 모인 돈 / 최소 주문 금액</h3>
-      </div>
+
+      <div className="Match-main">
+        <div style={{borderWidth: 2, borderColor:'green', borderStyle:"solid", padding:"20px", width:"20px"}}>1</div>
+        <div style={{borderWidth: 2, borderColor:'green', borderStyle:"solid", padding:"20px",  marginLeft:"50px", width:"500px"}}>메뉴</div>
+      </div> 
+
 
     </div>
   );
