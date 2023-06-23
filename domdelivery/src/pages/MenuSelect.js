@@ -16,29 +16,21 @@ function MenuSelect({ selectedMenuId }) {
     return <Menupage_pizza1 />;
   } else if (id === "2") {
     return <Menupage_pizza2 />;
-  }
-  else if (id === "3") {
+  } else if (id === "3") {
     return <Menupage_pizza3 />;
-  }
-  else if (id === "4" || id === "5") {
+  } else if (id === "4" || id === "5") {
     return <Menupage_chicken1 />;
-  }
-  else if (id === "6") {
+  } else if (id === "6") {
     return <Menupage_chicken2 />;
-  }
-  else if (id === "7") {
+  } else if (id === "7") {
     return <Menupage_chicken3 />;
+  } else if (id === "8" || id === "9") {
+    return <Menupage_ham1 />;
+  } else if (id === "10") {
+    return <Menupage_ham2 />;
+  } else if (id === "11") {
+    return <Menupage_ham3 />;
   } else {
-    else if (id === "8" || id === "9") {
-      return <Menupage_ham1 />;
-    }
-    else if (id === "10") {
-      return <Menupage_ham2 />;
-    }
-    else if (id === "11") {
-      return <Menupage_ham3 />;
-    }
-
     return <Menupage_pizza1 />;
   }
 }
