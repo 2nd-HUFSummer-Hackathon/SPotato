@@ -142,13 +142,6 @@ body {
   width: 98%;
 }
 
-/*MenuSelect*/
-
-.MenuSelect img {
-  width: 50%;
-  height: 50%;
-}
-
 .OurButton {
   cursor: pointer;
   border: none;
@@ -179,4 +172,11 @@ body {
 .OurButton_negative {
   background-color: #fd565f;
   color: white;
+}
+
+/*MenuSelect*/
+
+.MenuSelect img {
+  width: 50%;
+  height: 50%;
 }
