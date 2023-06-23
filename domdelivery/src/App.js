@@ -10,7 +10,7 @@ import Delivery from "./pages/Delivery";
 const dummyData = [{}];
 
 function App() {
-  const navigate = useNavigate();
+
   return (
     <BrowserRouter>
       <div className="App">
