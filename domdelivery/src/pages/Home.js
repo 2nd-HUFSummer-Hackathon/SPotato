@@ -48,7 +48,6 @@ const ControlMenu = ({ value, onChange, optionList }) => {
   );
 };
 
-
 function Home({ onMenuIdChange }) {
   const navigate = useNavigate();
   const [foodType, setFoodType] = useState("pizza");
