@@ -155,6 +155,15 @@ body {
   height:120%;
 }
 
+.Pay .fakeaccount{
+  color:white;
+  background-color: blue;
+  padding:20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 10px;
+}
+
 /*Match*/
 .Match {
   display: inline-block;
