@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Match from "./pages/Match";
@@ -10,6 +10,7 @@ import Delivery from "./pages/Delivery";
 const dummyData = [{}];
 
 function App() {
+  const navigate = useNavigate();
   return (
     <BrowserRouter>
       <div className="App">
