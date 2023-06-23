@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useMemo, useEffect } from "react";
 import OurButton from "../component/OurButton";
 import UserInfo from "../component/UserInfo";
 
@@ -46,17 +46,25 @@ const ControlMenu = ({ value, onChange, optionList }) => {
   );
 };
 
-function Home() {
+function Home({ onMenuIdChange }) {
   const navigate = useNavigate();
   const [foodType, setFoodType] = useState("pizza");
   const [subType, setSubtype] = useState("notCare");
-
+  const selectedMenu = useMemo(() => {
+    const allMenus = [...pizzaList, ...chickenList, ...hamburgerList];
+    return allMenus.find((menu) => menu.value === subType);
+  }, [subType]);
+  useEffect(() => {
+    if (selectedMenu) {
+      onMenuIdChange(selectedMenu.menu_id);
+    }
+  }, [selectedMenu, onMenuIdChange]);
   return (
     <div className="Home">
       <UserInfo />
-      
+
       <h3>무엇을 함께 배달할까?</h3>
-      
+
       <div className="select">
         <ControlMenu
           value={foodType}
