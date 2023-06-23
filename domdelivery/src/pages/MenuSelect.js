@@ -10,7 +10,7 @@ import Menupage_ham3 from "../Menupage/Menupage_ham3";
 function MenuSelect(props) {
   console.log(props);
   const MenuId = props.selectedMenuId;
-
+  console.log(MenuId);
   if (MenuId == 0 || MenuId == 1) {
     return (
       <div>

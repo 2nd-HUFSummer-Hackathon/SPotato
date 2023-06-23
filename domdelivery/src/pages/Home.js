@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import { useState, useMemo, useEffect } from "react";
 import OurButton from "../component/OurButton";
-import UserInfo,{nameValue, accountValue} from "../component/UserInfo";
+import UserInfo, { nameValue, accountValue } from "../component/UserInfo";
 import MenuSelect from "./MenuSelect";
 import Match from "./Match";
 
@@ -12,21 +12,21 @@ const foodOptionList = [
 ];
 
 const pizzaList = [
-  { value: "notCare", name: "상관없음", menu_id: 0 },
+  { value: "notCare_pizza", name: "상관없음", menu_id: 0 },
   { value: "boy", name: "피자보이", menu_id: 1 },
   { value: "banolim", name: "반올림피자", menu_id: 2 },
   { value: "bs", name: "베이식스", menu_id: 3 },
 ];
 
 const chickenList = [
-  { value: "notCare", name: "상관없음", menu_id: 4 },
+  { value: "notCare_chicken", name: "상관없음", menu_id: 4 },
   { value: "crazy", name: "미파닭", menu_id: 5 },
   { value: "kyochon", name: "교촌", menu_id: 6 },
   { value: "bhc", name: "BHC", menu_id: 7 },
 ];
 
 const hamburgerList = [
-  { value: "notCare", name: "상관없음", menu_id: 8 },
+  { value: "notCare_ham", name: "상관없음", menu_id: 8 },
   { value: "lotte", name: "롯데리아", menu_id: 9 },
   { value: "moms", name: "맘스터치", menu_id: 10 },
   { value: "six", name: "666버거", menu_id: 11 },
@@ -38,7 +38,6 @@ const ControlMenu = ({ value, onChange, optionList }) => {
       className="ControlMenu"
       value={value}
       onChange={(e) => onChange(e.target.value)}
-      
     >
       {optionList.map((it, idx) => (
         <option key={idx} value={it.value}>
@@ -52,7 +51,7 @@ const ControlMenu = ({ value, onChange, optionList }) => {
 function Home({ onMenuIdChange }) {
   const navigate = useNavigate();
   const [foodType, setFoodType] = useState("pizza");
-  const [subType, setSubtype] = useState("notCare");
+  const [subType, setSubtype] = useState("notCare_pizza");
   const selectedMenu = useMemo(() => {
     const allMenus = [...pizzaList, ...chickenList, ...hamburgerList];
     return allMenus.find((menu) => menu.value === subType);
@@ -63,14 +62,15 @@ function Home({ onMenuIdChange }) {
     }
   }, [selectedMenu, onMenuIdChange]);
 
-
   return (
     <div className="Home">
       <UserInfo />
       <div>
-        <h4 className="log">회원명 : {nameValue} <br/>  환불계좌:{accountValue} </h4>
+        <h4 className="log">
+          회원명 : {nameValue} <br /> 환불계좌:{accountValue}{" "}
+        </h4>
       </div>
-      
+
       <h3>무엇을 함께 배달할까?</h3>
 
       <div className="select">
