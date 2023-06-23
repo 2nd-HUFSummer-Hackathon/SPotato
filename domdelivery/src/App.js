@@ -24,10 +24,16 @@ const reducer = (state, action) => {
   return newState;
 };
 
-const dummyData1 = [
-  {id:1, menu:"sfd "}, 
-  {id:2, menu:"sdff "},
-  {id:3, menu:"sdfs "} 
+const dummyChicken = [
+  
+];
+
+const dummyPizza=[
+
+];
+
+const dummyHambergur[
+
 ];
 
 const dummyUser = [
