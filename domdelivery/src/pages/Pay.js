@@ -12,11 +12,13 @@ function Pay(props) {
         <div className="price">{totalvalue} 원</div>
       </div>
 
+      <hr></hr>
+
       <div className="waiting">
         다른 학우들이 당신의 결제를 기다립니다...(3/4)
       </div>
 
-      <div className="Pay-main">
+      <div className="Pay-main" style={{marginBottom: "0px"}}>
         <div className="num">1</div>
         <div
           className="menu"
@@ -33,6 +35,93 @@ function Pay(props) {
         </div>
         <div style={{ padding: "20px", marginLeft: "10px", width: "20px" }}>
           <OurButton text={"결제"} onClick={() => navigate("/delivery")} />
+        </div>
+      </div>
+
+      <div className="Pay-main">
+        <div className="num">2</div>
+        <div
+          className="menu"
+          style={{
+            borderWidth: 2,
+            borderColor: "green",
+            borderStyle: "solid",
+            padding: "20px",
+            marginLeft: "30px",
+            width: "300px",
+          }}
+        >
+          메뉴
+        </div>
+        <div
+          style={{
+            padding: "20px",
+            marginLeft: "30px",
+            marginRight: "-35px",
+            width: "40px",
+            backgroundColor: "#64c964",
+            color: "white",
+          }}
+        >
+          완료
+        </div>
+      </div>
+
+      <div className="Pay-main">
+        <div className="num">3</div>
+        <div
+          className="menu"
+          style={{
+            borderWidth: 2,
+            borderColor: "green",
+            borderStyle: "solid",
+            padding: "20px",
+            marginLeft: "30px",
+            width: "300px",
+          }}
+        >
+          메뉴
+        </div>
+        <div
+          style={{
+            padding: "20px",
+            marginLeft: "30px",
+            marginRight: "-35px",
+            width: "40px",
+            backgroundColor: "#64c964",
+            color: "white",
+          }}
+        >
+          완료
+        </div>
+      </div>
+
+      <div className="Pay-main">
+        <div className="num">4</div>
+        <div
+          className="menu"
+          style={{
+            borderWidth: 2,
+            borderColor: "green",
+            borderStyle: "solid",
+            padding: "20px",
+            marginLeft: "30px",
+            width: "300px",
+          }}
+        >
+          메뉴
+        </div>
+        <div
+          style={{
+            padding: "20px",
+            marginLeft: "30px",
+            marginRight: "-35px",
+            width: "40px",
+            backgroundColor: "#64c964",
+            color: "white",
+          }}
+        >
+          완료
         </div>
       </div>
     </div>

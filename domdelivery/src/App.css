@@ -141,8 +141,8 @@ body {
 
 .Pay .Pay-header {
   font-size: 20px;
-  margin-top: 150px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .Pay .Pay-main {
@@ -150,6 +150,7 @@ body {
   align-items: center;
   font-size: 25px;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .Pay .OurButton{
@@ -168,8 +169,8 @@ body {
 
 .Pay .waiting{
   font-size: 25px;
-  margin-top:50px;
-  margin-bottom: 20px;
+  margin-top:30px;
+  margin-bottom: -10px;
 }
 
 .Pay .price{
