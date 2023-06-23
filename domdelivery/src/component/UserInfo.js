@@ -15,16 +15,28 @@ function UserInfo() {
     setName(e.target.value);
   };
   const addUser = () => {
-    onCreate(account, name);
-    setAccount("");
-    setName("");
+    if (account.length >= 1 && name.length >= 1) {
+      onCreate(account, name);
+      setAccount("");
+      setName("");
+    }
   };
 
   return (
     <div className="UserInfo">
       <h3 className="guest">게스트 회원 정보를 입력해줘</h3>
-      <input placeholder="닉네임" onChange={changeName} value={name} />
-      <input placeholder="환불계좌" onChange={changeAccount} value={account} />
+      <input
+        className="username"
+        placeholder="닉네임"
+        onChange={changeName}
+        value={name}
+      />
+      <input
+        className="useraccount"
+        placeholder="환불계좌"
+        onChange={changeAccount}
+        value={account}
+      />
       <OurButton text={"추가하기"} onClick={addUser} />
     </div>
   );
