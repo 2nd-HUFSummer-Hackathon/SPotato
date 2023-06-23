@@ -1,4 +1,4 @@
-function Ham2() {
+function Menupage_ham2() {
   return (
     <div className="MenuSelect">
       <h3>여기는 ~맘스터치~입니다</h3>
@@ -8,4 +8,4 @@ function Ham2() {
   );
 }
 
-export default Ham2;
+export default Menupage_ham2;

@@ -1,4 +1,4 @@
-function Chicken3() {
+function Menupage_chicken3() {
   return (
     <div className="MenuSelect">
       <h3>여기는 ~BHC~입니다</h3>
@@ -8,4 +8,4 @@ function Chicken3() {
   );
 }
 
-export default Chicken3;
+export default Menupage_chicken3;
