@@ -24,17 +24,11 @@ const reducer = (state, action) => {
   return newState;
 };
 
-const dummyChicken = [
-  
-];
+const dummyChicken = [{ id: 15, max: 3, order: [1, 0], current: 38500 }];
 
-const dummyPizza = [
+const dummyPizza = [{ id: 13, max: 4, order: [0, 0, 0, 0], current: 87600 }];
 
-];
-
-const dummyHambergur = [
-
-];
+const dummyHambergur = [{ id: 110, max: 2, order: [1, 0, 0], current: 29000 }];
 
 const dummyUser = [
   { id: 1, account: 123456789, name: "K" },
