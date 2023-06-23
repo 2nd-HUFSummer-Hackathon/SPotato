@@ -94,7 +94,7 @@ function App() {
                   />
                 }
               />
-              <Route path="/pay" element={<Pay />} />
+              <Route path="/pay" element={<Pay cost={cost} />} />
               <Route path="/delivery" element={<Delivery />} />
             </Routes>
           </div>
