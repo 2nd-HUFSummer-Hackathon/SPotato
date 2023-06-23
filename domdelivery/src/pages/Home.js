@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import OurButton from "../component/OurButton";
 import UserInfo from "../component/UserInfo";
+
 function Home() {
   const navigate = useNavigate();
   return (
