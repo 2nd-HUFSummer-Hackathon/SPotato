@@ -161,6 +161,11 @@ body {
   margin-bottom: 20px;
 }
 
+.Match .Match-header .OurButton{
+  height: 65px;
+  width: 200px;
+}
+
 .Match .Match-main {
   display: inline-flex;
   align-items: center;
