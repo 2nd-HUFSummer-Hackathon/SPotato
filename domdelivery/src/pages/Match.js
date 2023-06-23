@@ -7,7 +7,7 @@ function Match() {
     <div className="Match">
       <div className="Match-header">
         <div className="RoomInfo">
-          <div className="RoomName">0000 방</div>
+          <div className="RoomName">{} 방</div>
           <div style={{  marginLeft:"40px", width:"100px"}}>
             <OurButton text={"메뉴 선택"} onClick={() => navigate("/menuselect")} />
           </div> 

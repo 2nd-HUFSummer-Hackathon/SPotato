@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import { useState, useMemo, useEffect } from "react";
 import OurButton from "../component/OurButton";
-import UserInfo from "../component/UserInfo";
+import UserInfo,{nameValue, accountValue} from "../component/UserInfo";
 import MenuSelect from "./MenuSelect";
 import Match from "./Match";
 
@@ -62,9 +62,11 @@ function Home({ onMenuIdChange }) {
     }
   }, [selectedMenu, onMenuIdChange]);
 
+
   return (
     <div className="Home">
       <UserInfo />
+      <h4 className="log">회원명 : {nameValue}  환불계좌:{accountValue} </h4>
 
       <h3>무엇을 함께 배달할까?</h3>
 

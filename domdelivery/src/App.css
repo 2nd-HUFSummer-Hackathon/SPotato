@@ -73,6 +73,7 @@ body {
 /*Home*/
 .Home {
   align-items: center;
+  margin-top: 100px;
 }
 
 .Home .select {
@@ -102,13 +103,18 @@ body {
   font-size: 25px;
 }
 
+.Home .log{
+  margin-bottom:100px;
+  color:gray;
+}
+
+
 /*Home - UserInfo*/
 .UserInfo .guest {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .UserInfo input{
-  margin-bottom: 100px;
   height : 30px;
 }
 
