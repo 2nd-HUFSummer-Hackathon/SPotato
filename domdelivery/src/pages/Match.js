@@ -1,10 +1,6 @@
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import OurButton from "../component/OurButton";
 
-const OrderCount = () => {
-
-};
-
 
 function Match() {
   const navigate = useNavigate();

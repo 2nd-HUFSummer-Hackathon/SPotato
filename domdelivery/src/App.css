@@ -122,6 +122,11 @@ body {
   padding: 20px;
 }
 
+.Pay .OurButton{
+  width:80px;
+  height:120%;
+}
+
 /*Match*/
 .Match {
   display: inline-block;
