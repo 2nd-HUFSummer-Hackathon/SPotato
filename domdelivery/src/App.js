@@ -25,7 +25,7 @@ const reducer = (state, action) => {
 };
 
 const dummyChicken = [
-  { id: 15, max: 3, order: [1, 0], current: 10500, least: 20000 },
+  { id: 15, max: 2, order: [1, 0], current: 10500, least: 20000 },
 ];
 
 const dummyPizza = [
@@ -33,7 +33,7 @@ const dummyPizza = [
 ];
 
 const dummyHamburger = [
-  { id: 110, max: 2, order: [1, 0, 0], current: 29000, least: 40000 },
+  { id: 110, max: 3, order: [1, 0, 0], current: 29000, least: 40000 },
 ];
 
 const dummyUser = [
