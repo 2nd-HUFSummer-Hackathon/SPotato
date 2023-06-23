@@ -50,7 +50,9 @@ function Match(props) {
         </div>
 
         <div className="Money-Wrapper">
-          <div className="Money">현재 모인 돈 / {min_money}</div>
+          <div className="Money">
+            {props.cost} / {min_money}
+          </div>
           <div style={{ marginLeft: "40px", width: "100px" }}>
             <OurButton text={"주문 하기"} onClick={() => navigate("/pay")} />
           </div>
@@ -67,22 +69,52 @@ function Match(props) {
         </div>
       </div>
 
-      <div className="Match-main" style={{marginBottom: "10px"}}>
+      <div className="Match-main" style={{ marginBottom: "10px"}}>
         <div className="num">2</div>
         <div className="menu">메뉴</div>
-        <div style={{ padding: "20px", marginLeft: "30px", width: "80px", backgroundColor:"#64c964", color:"white"}}>o</div>
+        <div
+          style={{
+            padding: "20px",
+            marginLeft: "30px",
+            width: "80px",
+            backgroundColor: "#64c964",
+            color: "white",
+          }}
+        >
+          o
+        </div>
       </div>
 
-      <div className="Match-main" style={{marginBottom: "10px"}}>
+      <div className="Match-main" style={{ marginBottom: "10px" }}>
         <div className="num">3</div>
         <div className="menu">메뉴</div>
-        <div style={{ padding: "20px", marginLeft: "30px", width: "80px", backgroundColor:"#64c964", color:"white"}}>o</div>
+        <div
+          style={{
+            padding: "20px",
+            marginLeft: "30px",
+            width: "80px",
+            backgroundColor: "#64c964",
+            color: "white",
+          }}
+        >
+          o
+        </div>
       </div>
 
-      <div className="Match-main" style={{marginBottom: "10px"}}>
+      <div className="Match-main" style={{ marginBottom: "10px" }}>
         <div className="num">4</div>
         <div className="menu">메뉴</div>
-        <div style={{ padding: "20px", marginLeft: "30px", width: "80px", backgroundColor:"#64c964", color:"white"}}>o</div>
+        <div
+          style={{
+            padding: "20px",
+            marginLeft: "30px",
+            width: "80px",
+            backgroundColor: "#64c964",
+            color: "white",
+          }}
+        >
+          o
+        </div>
       </div>
     </div>
   );
