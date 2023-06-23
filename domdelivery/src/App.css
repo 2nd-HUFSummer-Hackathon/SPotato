@@ -101,12 +101,26 @@ body {
   font-size: 25px;
 }
 
+/*Home - UserInfo*/
 .UserInfo .guest {
   font-size: 25px;
 }
 
-.UserInfo {
+.UserInfo input{
   margin-bottom: 100px;
+  height : 30px;
+}
+
+.UserInfo .username{
+  width:20%;
+} 
+
+.UserInfo .useraccount{
+  width:50%;
+}
+
+.UserInfo .OurButton{
+  margin-left: 10px;
 }
 
 /*Pay*/
