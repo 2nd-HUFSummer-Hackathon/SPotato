@@ -138,6 +138,8 @@ body{
 
 .Match .Match-main{
   display: inline-flex;
+  align-items: center;
   font-size: 20px;
   padding: 20px;
+  width : 98%;
 }
