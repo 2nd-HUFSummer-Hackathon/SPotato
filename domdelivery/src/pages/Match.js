@@ -16,7 +16,9 @@ function Match() {
 
         <div style={{display: "flex", alignItems: "flex-start", marginTop:"20px"}}>
           <div style={{color:"white", backgroundColor:"blue", padding:"20px",width:"500px"}}>현재 모인 돈 / 최소 주문 금액</div>
-          <div style={{borderWidth: 2, borderColor:'green', borderStyle:"solid", padding:"20px", marginLeft:"50px", width:"100px"}}>aa</div>
+          <div style={{borderWidth: 2, borderColor:'green', borderStyle:"solid", padding:"20px", marginLeft:"50px", width:"100px"}}>
+            <OurButton text={"주문하기"}/>
+          </div>
         </div>
       </div>
 
