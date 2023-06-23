@@ -3,6 +3,7 @@ function Menupage_chicken1() {
   const navigate = useNavigate();
   function handleClick() {
     alert("이미지가 선택되었습니다.");
+
     navigate(-1);
   }
   return (
