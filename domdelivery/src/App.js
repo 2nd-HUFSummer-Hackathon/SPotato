@@ -24,7 +24,12 @@ const reducer = (state, action) => {
   return newState;
 };
 
-const dummyData = [{}];
+const dummyData1 = [
+  {id:1, menu:"sfd "}, 
+  {id:2, menu:"sdff "},
+  {id:3, menu:"sdfs "} 
+];
+
 const dummyUser = [
   { id: 1, account: 123456789, name: "K" },
   { id: 2, account: 123456989, name: "J" },
