@@ -7,26 +7,9 @@ function Match(props) {
   let RoomName = "미선택";
   let choice1, choice2, choice3;
   let monney = 0;
+  let userchoice = "메뉴를 선택하세요."
   if (number == 0 || number == 1) {
     RoomName = "피자보이";
-<<<<<<< HEAD
-    min_money = 17000;
-  } else if (number == 2) {
-    RoomName = "반올림피자";
-    min_money = 16000;
-  } else if (number == 3) {
-    RoomName = "베이식스";
-    min_money = 15000;
-  } else if (number == 4 || number == 5) {
-    RoomName = "미파닭";
-    min_money = 12000;
-  } else if (number == 6) {
-    RoomName = "교촌치킨";
-    min_money = 15000;
-  } else if (number == 7) {
-    RoomName = "BHC";
-    min_money = 12000;
-=======
     min_money = 34000;
     choice1 = "포테이토피자+콜라"
     choice2 = "치즈피자+콜라"
@@ -66,11 +49,7 @@ function Match(props) {
     choice1 = "더블팝순살 후라이드"
     choice2 = "더블팝순살 후라이드"
     choice3 = "뿌링클 콤보"
-<<<<<<< HEAD
->>>>>>> 90ca231e760af3568dcaf086fc196c33a68da1af
-=======
     monney = 64000;
->>>>>>> 1ea28ace275aaea284e9800ab8da79c0aef90ef5
   } else if (number == 8 || number == 9) {
     RoomName = "롯데리아";
     min_money = 23000;
@@ -123,7 +102,7 @@ function Match(props) {
 
       <div className="Match-main">
         <div className="num">1</div>
-        <div className="menu">뿌링클</div>
+        <div className="menu">{userchoice}</div>
         <div style={{ padding: "20px", marginLeft: "10px", width: "20px" }}>
           <OurButton type="positive" text={"O"} />
         </div>
